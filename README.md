@@ -110,4 +110,3 @@ First of all, I hope this initiation gave you interest into DevOps concepts and 
 
 Now for a treasure trove of additional resources to dive deeper into DevOps concepts, check out the [**to go further section**](doc/to_go_further.md). :eyes:
 
-test
