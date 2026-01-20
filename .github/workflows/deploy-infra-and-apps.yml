@@ -3,7 +3,6 @@ on:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
-      - '*'
 
 permissions:
   # Require write permission to Fetch an OIDC token (required for federated credential) and write it
