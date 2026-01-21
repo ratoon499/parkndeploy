@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   define:{
-      APP_VERSION: JSON.stringify(process.env.npm-package-version)
+      APP_VERSION: JSON.stringify(process.env.npm_package_version)
   },
   server:{
     proxy:
