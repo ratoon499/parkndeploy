@@ -62,7 +62,7 @@ jobs:
 
   deploy_infrastructure:
     runs-on: ubuntu-latest
-    needs: [build_frontend, build_backend]
+    needs: [build_frontend, publish_backend]
     environment: production # bind the job to the production environment
 
     outputs:
