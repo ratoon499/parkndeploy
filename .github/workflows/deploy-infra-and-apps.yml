@@ -35,7 +35,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Build_front
-        path: dist
+        path: frontend/dist
   
   publish_backend:
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: publish_back
-        path: ./bin/Release/9.0.x/publish
+        path: ./backend/ParkNDeploy.Api/publish
 
   deploy_infrastructure:
     runs-on: ubuntu-latest
@@ -147,7 +147,7 @@ jobs:
     - uses: actions/download-artifact@v5
       with:
         name: publish_back
-        path: ./bin/Release/9.0.x/publish
+        path: ./backend/ParkNDeploy.Api/publish
         
     - name: Login to Azure 
       uses: azure/login@v2
