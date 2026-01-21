@@ -7,6 +7,7 @@ import ParkingList from "@/components/ParkingList/ParkingList";
 import { LoadingSpinner } from "@/components/ui/loadingspinner";
 import ParkingListFilters from "@/components/ParkingList/ParkingListFilters";
 import { useParkingSearchStore } from "@/stores/parkingSearchStore";
+import "./vite-env";
 
 function App() {
   const { parkingName } = useParkingSearchStore();
@@ -22,6 +23,7 @@ function App() {
     <div className="flex flex-col gap-5 items-center">
       <h1 className="text-2xl font-bold text-center">
         Where can I Park in Angers ? 👀
+        app version is : {APP_VERSION}
       </h1>
       <ParkingListFilters
         onChange={(parkingName: string) => {
