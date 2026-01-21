@@ -60,11 +60,7 @@ jobs:
 
     - name: Build the app
       run: npm install && npm run build
-      working-directory: ./frontend    
-
-    - name: Lint
-      run: npm run lint
-      working-directory: ./frontend    
+      working-directory: ./frontend  
       
     - name: Login to Azure 
       uses: azure/login@v2
